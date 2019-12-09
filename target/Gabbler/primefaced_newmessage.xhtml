@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: IN-SO-006
+  Date: 31/10/2019
+  Time: 14:24
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Gabbler | New Message PrimeFace Style</title>
+</h:head>
+
+<h:body>
+
+    <p:breadCrumb>
+        <p:menuitem value="Gabbler" url="index.xhtml" />
+    </p:breadCrumb>
+
+    <h:form>
+        Nouveau message :<br/>
+        <h:inputTextarea   value="#{gabblerHandlerBean.message}" id="newgab">
+            <!-- <f:validateLength minimum="1" maximum="140" />
+             <f:validator validatorId="com.formation.bean.MessageValidator" />
+             required="true"-->
+        </h:inputTextarea><br/>
+        <h:message for="newgab" infoStyle="color:green;margin:8px" errorStyle="color:red;margin:8px"/><br/>
+
+
+
+        <h:commandButton value="Reset" action="#{gabblerHandlerBean.clearMessage()}" /><br/>
+        <h:commandButton value="Post a Gab!" action="#{gabblerHandlerBean.addGab()}"/><br/>
+    </h:form>
+
+    <!--<f:ajax execute="@form" render="out"/>-->
+    <h5><h:outputText value="#{gabblerHandlerBean.messageToDisplay}"
+                      style="#{gabblerHandlerBean.valid ? 'color:green;':'color:red;'}" id="out"/></h5>
+
+
+
+    <hr/>
+
+    <h:outputText rendered="#{empty gabblerHandlerBean.listGabbler}" value="Il n'y a rien encore" />
+
+
+    <h:form rendered="#{not empty gabblerHandlerBean.listGabbler}">
+        <h:dataTable value="#{gabblerHandlerBean.listGabbler}" var="g">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputLabel value="Message" />
+                </f:facet>
+                <h:outputText value="#{g.message}"/>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputLabel value="Date" />
+                </f:facet>
+                <h:outputText value="#{g.date}">
+                    <f:convertDateTime pattern="dd.MM.yyyy HH:mm" />
+                </h:outputText>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    Delete?
+                </f:facet>
+                <h:commandLink value="Delete" action="#{gabblerHandlerBean.myDAO.remove(g)}" />
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    Like
+                </f:facet>
+                <h:commandLink value="Like" action="#{gabblerHandlerBean.likeGab(g)}" />
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    Smiley
+                </f:facet>
+                <h:outputText value="#{gabblerHandlerBean.tempSmiley}"  />
+            </h:column>
+
+        </h:dataTable>
+    </h:form>
+
+</h:body>
+
+</html>

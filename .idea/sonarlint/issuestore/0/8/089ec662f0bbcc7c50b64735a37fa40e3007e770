@@ -1,0 +1,9 @@
+
+?squid:S3010"(Remove this assignment of "listGabbler".(™ëÊª
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(™ëÊª
+Gsquid:S2201="+The return value of "replace" must be used.(µ£åàúÿÿÿÿ
+Lsquid:S2696H"6Make the enclosing method "static" or remove this set.(ÜÕˆ(
+osquid:S2293H"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÕˆ(
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÐËá›þÿÿÿÿ
+gsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(î¹í™þÿÿÿÿ
+gsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(î“Œ”úÿÿÿÿ

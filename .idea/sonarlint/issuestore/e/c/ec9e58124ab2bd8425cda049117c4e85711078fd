@@ -1,0 +1,10 @@
+
+9squid:S1643"Use a StringBuilder instead.(ÿüÛ”úÿÿÿÿ
+ksquid:UselessImportCheck"GRemove this unused import 'javax.enterprise.context.ApplicationScoped'.(—ò¸ì
+hsquid:UselessImportCheck"?Remove this unused import 'com.formation.container.GabblerDAO'.(›¾ûÿÿÿÿ
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ûïÓÙùÿÿÿÿ
+qsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ü©¶Ç
+csquid:HiddenFieldCheck“";Rename "message" which hides the field declared at line 19.(¸¹‚ßûÿÿÿÿ
+bsquid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(¡ªØÈ
+gsquid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(ŒŞ ìûÿÿÿÿ
+bsquid:CommentedOutCodeLinew"<This block of commented-out lines of code should be removed.(ÒîºÕ

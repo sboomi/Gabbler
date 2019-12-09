@@ -1,0 +1,21 @@
+
+e
+5src/main/java/com/formation/container/GabblerDAO.java,0\8\089ec662f0bbcc7c50b64735a37fa40e3007e770
+b
+2src/main/java/com/formation/bean/UrlValidator.java,6\6\660fcbd3f725490e2f7546d413031e12c7c44bb3
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+T
+$src/main/webapp/new_newmessage.xhtml,2\4\249e49fcff9e1851f6754336293d87f83bb19823
+I
+src/main/webapp/main.html,7\6\7688ab0a0bd6ffa44164693dcdf2f021102d7f5e
+X
+(src/main/webapp/WEB-INF/faces-config.xml,9\2\921ab541b29cd2aba50bbba38a0af79890ebe16a
+b
+2src/main/java/com/formation/container/Gabbler.java,d\f\df9083b27dd9bfa6688ca3c992206dd5b8f147b0
+_
+/src/main/java/com/formation/management/DAO.java,7\a\7a45c401a34e929617d5f9ca217324b06f6f996a
+[
++src/main/webapp/resources/css/bootstrap.css,3\2\32b70f712622d6b0b515f4fb49d895035a8257dc
+h
+8src/main/java/com/formation/bean/GabblerHandlerBean.java,e\c\ec9e58124ab2bd8425cda049117c4e85711078fd
