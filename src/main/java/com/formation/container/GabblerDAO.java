@@ -60,7 +60,6 @@ public class GabblerDAO implements DAO<Gabbler> {
                 href = "<a href=\""+messageURL+"\">"+hashtag+"</a>";
                 gabblerToEdit.getMessage().replace(hashtag, Matcher.quoteReplacement(href));
                 //La méthode ne remplace pas les liens
-                //gabblerToEdit.getMessage().replaceAll(hashtag, "MAMASFARTBOX");
             }
             listGabbler.set(gabblerToEdit.getId(),gabblerToEdit);
         }
